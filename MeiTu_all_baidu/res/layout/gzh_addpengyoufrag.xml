@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/show_content_bg"
+        android:orientation="vertical">
+<TextView
+    android:layout_width="wrap_content"
+    android:text="点击右上角(关注)按钮进行关注，以下是教程"
+    android:textSize="28dp"
+    android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="1.任意点击一位朋友或者微信群，如下图所示"
+            android:textSize="18dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selectapengyou" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="2.点击分享按钮，如下图所示"
+            android:textSize="18dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fenxiangpengyou" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="3.进入微信主界面，找到刚刚发送的消息，进去后点击消息中的链接，如下图所示"
+            android:textSize="18dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clicklianjie" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="4.点击蓝色文字，如下图所示"
+            android:textSize="18dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clicklansewenzi" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="5.点击关注按钮，如下图所示"
+            android:textSize="18dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/guanzhugzh" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- sliding宽度 -->
+    <dimen name="sliding_wight">100dp</dimen>
+    <!-- sliding剩余宽度 -->
+    <dimen name="sliding_last_wight">200dip</dimen>
+    <!-- 间隔线 -->
+    <dimen name="line">1px</dimen>
+    <!-- sliding item 距离左边的宽度 -->
+    <dimen name="sliding_left">30dip</dimen>
+    <!-- sliding图标和文字的距离 -->
+    <dimen name="sliding_jiange">20dip</dimen>
+
+   	<dimen name="show_image_w">270px</dimen>
+   	<dimen name="show_image_h">200px</dimen>
+    
+</resources>

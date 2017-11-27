@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="baise">#ffffff</color>
+    <color name="heise">#000000</color>
+    <color name="line">#c0c0c0</color>
+    <color name="danhuise">#666666</color>
+    <color name="danlanse">#95D3EF</color>
+    <color name="huise_e">#eeeeee</color>
+    <color name="danlvse">#77cb69</color>
+    <color name="huise_81">#818181</color>
+    <color name="huise_fc">#cccccc</color>
+    <color name="title_layout_click">#95D3EF</color>
+    <color name="black_01">#010101</color>
+    <color name="black_02">#020202</color>
+    <color name="black_03">#030303</color>
+    <color name="black_31">#313131</color>
+    <color name="gray_a5">#a5a5a5</color>
+    <color name="danlvse_bar">#4BDA68</color>
+    <!-- 外框，分割线颜色 -->
+    <color name="frame_line">#c0c0c0</color>
+    <color name="transparent">#00000000</color>
+    <color name="btransparent">#80000000</color>
+    <color name="background">#F7F4F0</color>
+    <color name="title_color">#333333</color>
+    <color name="crazy_title">#633D13</color>
+    <color name="crazy_bg">#D3BE95</color>
+    <color name="points_button">#A87B31</color>
+    <color name="points_yes">#2FC85C</color>
+    <color name="points_no">#797979</color>
+    <color name="points_do">#FC7E0A</color>
+    <color name="crazy_text">#F1DF99</color>
+    <color name="crazy_dialog_bg">#BB9962</color>
+    <!-- 开始按钮背景 -->
+    <color name="crazy_start_noclick">#E55D3F</color>
+    <color name="crazy_start_click">#FC830C</color>
+    <color name="crazy_start_text">#FCFF6D</color>
+    <color name="crazy_about_noclick">#815327</color>
+    <color name="crazy_about_click">#B77636</color>
+    <color name="grey">#ffdedede</color>
+    <color name="blue">#ff0099cc</color>
+    <color name="red">#ffff4444</color>
+    <color name="green">#ff99cc00</color>
+    <color name="white">@android:color/white</color>
+    <color name="abc_search_url_text_normal">#7fa87f</color>
+    <color name="abc_search_url_text_selected">@android:color/black</color>
+    <color name="abc_search_url_text_pressed">@android:color/black</color>
+    
+     <color name="sliding_bg_color">#383838</color>
+     <color name="sliding_line">#262c26</color>
+     <color name="sliding_left_kuai">#ff7900</color>
+
+     <color name="huangse">#FF5400</color>
+</resources>

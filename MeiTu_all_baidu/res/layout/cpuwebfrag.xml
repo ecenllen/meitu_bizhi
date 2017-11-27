@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/cpuWebview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/btn_fenxiang"
+        android:layout_alignRight="@+id/cpuWebview"
+        android:layout_alignBottom="@+id/cpuWebview"
+        android:background="@color/blue"
+        android:drawableTop="@drawable/btn_share_selector"
+        android:layout_centerVertical="true"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="分享" />
+</RelativeLayout>

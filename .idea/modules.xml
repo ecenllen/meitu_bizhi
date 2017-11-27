@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/brothersSDK/BrothersSDK.iml" filepath="$PROJECT_DIR$/brothersSDK/BrothersSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MeiTu_all_baidu/MeiTu_all_baidu.iml" filepath="$PROJECT_DIR$/MeiTu_all_baidu/MeiTu_all_baidu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PhotoViewLib/PhotoViewLib.iml" filepath="$PROJECT_DIR$/PhotoViewLib/PhotoViewLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RefleshLibrary/RefleshLibrary.iml" filepath="$PROJECT_DIR$/RefleshLibrary/RefleshLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imageloaderlibrary/imageloaderlibrary.iml" filepath="$PROJECT_DIR$/imageloaderlibrary/imageloaderlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meitu_bizhi.iml" filepath="$PROJECT_DIR$/meitu_bizhi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sliding_menu_library/sliding_menu_library.iml" filepath="$PROJECT_DIR$/sliding_menu_library/sliding_menu_library.iml" />
+    </modules>
+  </component>
+</project>

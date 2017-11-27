@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="titl_h">96px</dimen>
+    <dimen name="title_text_size">18sp</dimen>
+    <dimen name="buttom_size_1">120px</dimen>
+    <dimen name="buttom_text_size">18sp</dimen>
+    <!-- 标题文字大小 -->
+    <dimen name="content_title_size">18sp</dimen>
+    <!-- 内容文字大小 -->
+    <dimen name="content_text_size">14sp</dimen>
+    <dimen name="image_size">70dip</dimen>
+    <!-- 状态栏高度 -->
+    <dimen name="title_high">50dip</dimen>
+    <dimen name="title_back_width">45dip</dimen>
+    <dimen name="padding">2px</dimen>
+    <!-- 内容字体大小 -->
+    <dimen name="center_text_size">16sp</dimen>
+    <!-- 设置字体大小 -->
+    <dimen name="setting_text_size">14sp</dimen>
+    <!-- 结果字体大小 -->
+    <dimen name="result_test_size">13sp</dimen>
+    <!-- 解释字体大小 -->
+    <dimen name="center_edt_end_hint_size">12sp</dimen>
+    <!-- 条目高度 -->
+    <dimen name="content_item_h">50dip</dimen>
+    <!-- 基本设置textview 宽度(如call) -->
+    <dimen name="base_text_w">108dip</dimen>
+    <dimen name="header_height">60dp</dimen>
+    <dimen name="footer_height">90dp</dimen>
+    <dimen name="footer_padding">10dp</dimen>
+
+     <dimen name="stroke_width">4dp</dimen>
+     
+     
+     
+      <!-- The maximum number of action buttons that should be permitted within
+         an action bar/action mode. This will be used to determine how many
+         showAsAction="ifRoom" items can fit. "always" items can override this. -->
+    <integer name="abc_max_action_buttons">2</integer>
+
+    <!-- Maximum width for a stacked action bar tab. This prevents
+         action bar tabs from becoming too wide on a wide screen when only
+         a few are present. -->
+    <dimen name="abc_action_bar_stacked_tab_max_width">180dp</dimen>
+
+    <!-- Default height of an action bar. -->
+    <dimen name="abc_action_bar_default_height">48dip</dimen>
+    <!-- Vertical padding around action bar icons. -->
+    <dimen name="abc_action_bar_icon_vertical_padding">8dip</dimen>
+    <!-- Text size for action bar titles -->
+    <dimen name="abc_action_bar_title_text_size">18dp</dimen>
+    <!-- Text size for action bar subtitles -->
+    <dimen name="abc_action_bar_subtitle_text_size">14dp</dimen>
+    <!-- Top margin for action bar subtitles -->
+    <dimen name="abc_action_bar_subtitle_top_margin">-3dp</dimen>
+    <!-- Bottom margin for action bar subtitles -->
+    <dimen name="abc_action_bar_subtitle_bottom_margin">5dip</dimen>
+    <!-- Minimum width for an action button in the menu area of an action bar -->
+    <dimen name="abc_action_button_min_width">56dip</dimen>
+    <!-- Maximum height for a stacked tab bar as part of an action bar -->
+    <dimen name="abc_action_bar_stacked_max_height">48dp</dimen>
+    <!-- Size of the indeterminate Progress Bar -->
+    <dimen name="abc_action_bar_progress_bar_size">40dp</dimen>
+
+    <dimen name="abc_panel_menu_list_width">296dp</dimen>
+
+    <!-- Minimum width of the search view text entry area. -->
+    <dimen name="abc_search_view_text_min_width">160dip</dimen>
+    <!-- Preferred width of the search view. -->
+    <dimen name="abc_search_view_preferred_width">320dip</dimen>
+
+    <!-- Text padding for dropdown items -->
+    <dimen name="abc_dropdownitem_text_padding_left">8dip</dimen>
+    <dimen name="abc_dropdownitem_text_padding_right">8dip</dimen>
+    <!-- Width of the icon in a dropdown list -->
+    <dimen name="abc_dropdownitem_icon_width">32dip</dimen>
+     
+</resources>

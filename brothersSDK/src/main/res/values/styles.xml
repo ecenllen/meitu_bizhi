@@ -1,0 +1,357 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- 底部菜单radiobutton设置 -->
+    <style name="end_menu_button">
+        <item name="android:layout_width">0px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">2dip</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:paddingBottom">0dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/end_button_selector</item>
+        <item name="android:textSize">@dimen/buttom_text_size</item>
+        <item name="android:textColor">@color/huise_2_baise</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+ <style name="StyledIndicators" parent="@android:style/Theme.Light">
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>
+        <item name="vpiLinePageIndicatorStyle">@style/CustomLinePageIndicator</item>
+        <item name="vpiTitlePageIndicatorStyle">@style/CustomTitlePageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <item name="vpiUnderlinePageIndicatorStyle">@style/CustomUnderlinePageIndicator</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="StyledBlueIndicators" parent="@android:style/Theme.Light">
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>
+        <item name="vpiLinePageIndicatorStyle">@style/CustomLinePageIndicator</item>
+        <item name="vpiTitlePageIndicatorStyle">@style/CustomTitlePageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageBlueIndicator</item>
+        <item name="vpiUnderlinePageIndicatorStyle">@style/CustomUnderlinePageIndicator</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="CustomTitlePageIndicator">
+        <item name="android:background">#18FF0000</item>
+        <item name="footerColor">#FFAA2222</item>
+        <item name="footerLineHeight">1dp</item>
+        <item name="footerIndicatorHeight">3dp</item>
+        <item name="footerIndicatorStyle">underline</item>
+        <item name="android:textColor">#AA000000</item>
+        <item name="selectedColor">#FF000000</item>
+        <item name="selectedBold">true</item>
+    </style>
+
+    <style name="CustomLinePageIndicator">
+        <item name="strokeWidth">4dp</item>
+        <item name="lineWidth">30dp</item>
+        <item name="unselectedColor">#FF888888</item>
+        <item name="selectedColor">#FF880000</item>
+    </style>
+
+    <style name="CustomCirclePageIndicator">
+        <item name="fillColor">#FF888888</item>
+        <item name="strokeColor">#FF000000</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="radius">10dp</item>
+        <item name="centered">true</item>
+    </style>
+
+    <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/custom_tab_indicator</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textColor">#FF555555</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:divider">@drawable/custom_tab_indicator_divider</item>
+        <item name="android:dividerPadding">10dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+    <style name="CustomTabPageBlueIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/vpi__tab_indicator</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textColor">#FF555555</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:divider">@drawable/custom_tab_indicator_divider</item>
+        <item name="android:dividerPadding">10dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="CustomUnderlinePageIndicator">
+        <item name="selectedColor">#FFCC0000</item>
+        <item name="android:background">#FFCCCCCC</item>
+        <item name="fadeLength">1000</item>
+        <item name="fadeDelay">1000</item>
+    </style>
+    <declare-styleable name="CircularProgressButton">
+        <attr name="cpb_textComplete" format="string" />
+        <attr name="cpb_textIdle" format="string" />
+        <attr name="cpb_textError" format="string" />
+        <attr name="cpb_colorProgress" format="color" />
+        <attr name="cpb_colorIndicator" format="color" />
+        <attr name="cpb_colorIndicatorBackground" format="color" />
+        <attr name="cpb_colorComplete" format="color" />
+        <attr name="cpb_colorError" format="color" />
+        <attr name="cpb_colorIdle" format="color" />
+        <attr name="cpb_colorDisabled" format="color" />
+        <attr name="cpb_iconError" format="reference" />
+        <attr name="cpb_iconComplete" format="reference" />
+        <attr name="cpb_cornerRadius" format="dimension" />
+        <attr name="cpb_paddingProgress" format="dimension" />
+    </declare-styleable>
+ <!-- Styles in here can be extended for customisation in your application. Each utilises
+         one of the Base styles. If Holo themes are available on the current platform version
+         they will be used instead of the compat styles. -->
+
+    <style name="Widget.AppCompat.ActionBar" parent="Widget.AppCompat.Base.ActionBar">
+    </style>
+
+    <style name="Widget.AppCompat.Light.ActionBar" parent="Widget.AppCompat.Light.Base.ActionBar">
+    </style>
+
+    <style name="Widget.AppCompat.ActionBar.Solid"
+           parent="Widget.AppCompat.Base.ActionBar.Solid">
+    </style>
+
+    <style name="Widget.AppCompat.Light.ActionBar.Solid"
+           parent="Widget.AppCompat.Light.Base.ActionBar.Solid">
+    </style>
+
+    <style name="Widget.AppCompat.Light.ActionBar.Solid.Inverse"
+           parent="Widget.AppCompat.Light.Base.ActionBar.Solid.Inverse">
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title"
+           parent="TextAppearance.AppCompat.Widget.Base.ActionBar.Title">
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+           parent="TextAppearance.AppCompat.Widget.Base.ActionBar.Subtitle">
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+           parent="TextAppearance.AppCompat.Widget.Base.ActionBar.Title.Inverse">
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse"
+           parent="TextAppearance.AppCompat.Widget.Base.ActionBar.Subtitle.Inverse">
+    </style>
+
+    <style name="Widget.AppCompat.ProgressBar.Horizontal"
+           parent="Widget.AppCompat.Base.ProgressBar.Horizontal">
+    </style>
+
+    <style name="Widget.AppCompat.ProgressBar"
+           parent="Widget.AppCompat.Base.ProgressBar">
+    </style>
+
+    <style name="Widget.AppCompat.ActionButton" parent="Widget.AppCompat.Base.ActionButton">
+    </style>
+
+    <style name="Widget.AppCompat.Light.ActionButton"
+           parent="Widget.AppCompat.Light.Base.ActionButton">
+    </style>
+
+    <style name="Widget.AppCompat.ActionButton.CloseMode"
+           parent="Widget.AppCompat.Base.ActionButton.CloseMode">
+    </style>
+
+    <style name="Widget.AppCompat.Light.ActionButton.CloseMode"
+           parent="Widget.AppCompat.Light.Base.ActionButton.CloseMode">
+    </style>
+
+    <style name="Widget.AppCompat.ActionButton.Overflow"
+           parent="Widget.AppCompat.Base.ActionButton.Overflow">
+    </style>
+
+    <style name="Widget.AppCompat.Light.ActionButton.Overflow"
+           parent="Widget.AppCompat.Light.Base.ActionButton.Overflow">
+    </style>
+
+    <style name="Widget.AppCompat.ActionBar.TabBar" parent="Widget.AppCompat.Base.ActionBar.TabBar">
+    </style>
+
+    <style name="Widget.AppCompat.Light.ActionBar.TabBar"
+           parent="Widget.AppCompat.Light.Base.ActionBar.TabBar">
+    </style>
+
+    <style name="Widget.AppCompat.Light.ActionBar.TabBar.Inverse"
+           parent="Widget.AppCompat.Light.Base.ActionBar.TabBar.Inverse"></style>
+
+    <style name="Widget.AppCompat.ActionBar.TabView"
+           parent="Widget.AppCompat.Base.ActionBar.TabView">
+    </style>
+
+    <style name="Widget.AppCompat.Light.ActionBar.TabView"
+           parent="Widget.AppCompat.Light.Base.ActionBar.TabView">
+    </style>
+
+    <style name="Widget.AppCompat.Light.ActionBar.TabView.Inverse"
+           parent="Widget.AppCompat.Light.Base.ActionBar.TabView.Inverse">
+    </style>
+
+    <style name="Widget.AppCompat.ActionBar.TabText"
+           parent="Widget.AppCompat.Base.ActionBar.TabText">
+    </style>
+
+    <style name="Widget.AppCompat.Light.ActionBar.TabText"
+           parent="Widget.AppCompat.Light.Base.ActionBar.TabText">
+    </style>
+
+    <style name="Widget.AppCompat.Light.ActionBar.TabText.Inverse"
+           parent="Widget.AppCompat.Light.Base.ActionBar.TabText.Inverse">
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Menu"
+           parent="TextAppearance.AppCompat.Widget.Base.ActionBar.Menu">
+    </style>
+
+    <style name="Widget.AppCompat.ActionMode" parent="Widget.AppCompat.Base.ActionMode">
+    </style>
+
+    <style name="Widget.AppCompat.Light.ActionMode.Inverse"
+           parent="Widget.AppCompat.Light.Base.ActionMode.Inverse">
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionMode.Title"
+           parent="TextAppearance.AppCompat.Widget.Base.ActionMode.Title">
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+           parent="TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle">
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionMode.Title.Inverse"
+           parent="TextAppearance.AppCompat.Widget.Base.ActionMode.Title.Inverse">
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionMode.Subtitle.Inverse"
+           parent="TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle.Inverse">
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.DropDownItem"
+           parent="TextAppearance.AppCompat.Widget.Base.DropDownItem">
+    </style>
+
+    <style name="Widget.AppCompat.Spinner.DropDown.ActionBar"
+           parent="Widget.AppCompat.Base.Spinner">
+    </style>
+
+    <style name="Widget.AppCompat.Light.Spinner.DropDown.ActionBar"
+           parent="Widget.AppCompat.Light.Base.Spinner">
+    </style>
+
+    <style name="Widget.AppCompat.DropDownItem.Spinner"
+           parent="Widget.AppCompat.Base.DropDownItem.Spinner">
+    </style>
+    <style name="Widget.AppCompat.Light.DropDownItem.Spinner"
+           parent="Widget.AppCompat.Light.Base.DropDownItem.Spinner">
+    </style>
+
+    <style name="Widget.AppCompat.ListView.DropDown"
+           parent="Widget.AppCompat.Base.ListView.DropDown">
+    </style>
+
+    <style name="Widget.AppCompat.Light.ListView.DropDown"
+           parent="Widget.AppCompat.Light.Base.ListView.DropDown">
+    </style>
+
+    <style name="TextAppearance.Widget.AppCompat.ExpandedMenu.Item"
+           parent="TextAppearance.Widget.AppCompat.Base.ExpandedMenu.Item">
+    </style>
+
+    <style name="Widget.AppCompat.ListPopupWindow" parent="Widget.AppCompat.Base.ListPopupWindow">
+    </style>
+
+    <style name="Widget.AppCompat.Light.ListPopupWindow"
+           parent="Widget.AppCompat.Light.Base.ListPopupWindow">
+    </style>
+
+    <style name="Widget.AppCompat.PopupMenu" parent="Widget.AppCompat.Base.PopupMenu">
+    </style>
+
+    <style name="Widget.AppCompat.Light.PopupMenu"
+           parent="Widget.AppCompat.Light.Base.PopupMenu">
+    </style>
+
+    <style name="Widget.AppCompat.ListView.Menu" parent="Widget.AppCompat.Base.ListView.Menu">
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.PopupMenu.Large"
+           parent="TextAppearance.AppCompat.Base.Widget.PopupMenu.Large">
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.PopupMenu.Small"
+           parent="TextAppearance.AppCompat.Base.Widget.PopupMenu.Small">
+    </style>
+
+    <style name="TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"
+           parent="TextAppearance.AppCompat.Light.Base.Widget.PopupMenu.Large">
+    </style>
+
+    <style name="TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+           parent="TextAppearance.AppCompat.Light.Base.Widget.PopupMenu.Small">
+    </style>
+
+    <style name="TextAppearance.AppCompat.SearchResult.Title"
+           parent="TextAppearance.AppCompat.Base.SearchResult.Title">
+    </style>
+
+    <style name="TextAppearance.AppCompat.SearchResult.Subtitle"
+           parent="TextAppearance.AppCompat.Base.SearchResult.Subtitle">
+    </style>
+
+    <style name="TextAppearance.AppCompat.Light.SearchResult.Title"
+           parent="TextAppearance.AppCompat.Light.Base.SearchResult.Title">
+    </style>
+
+    <style name="TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+           parent="TextAppearance.AppCompat.Light.Base.SearchResult.Subtitle">
+    </style>
+
+    <style name="Widget.AppCompat.AutoCompleteTextView"
+           parent="Widget.AppCompat.Base.AutoCompleteTextView">
+    </style>
+
+    <style name="Widget.AppCompat.Light.AutoCompleteTextView"
+           parent="Widget.AppCompat.Light.Base.AutoCompleteTextView">
+    </style>
+
+    <style name="Widget.AppCompat.ActivityChooserView"
+           parent="Widget.AppCompat.Base.ActivityChooserView">
+    </style>
+
+    <style name="Widget.AppCompat.Light.ActivityChooserView"
+           parent="Widget.AppCompat.Light.Base.ActivityChooserView">
+    </style>
+    
+</resources>

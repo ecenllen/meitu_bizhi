@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile project(':PhotoViewLib')
+    compile(name: 'animated-base-release', ext: 'aar')
+    compile(name: 'animated-base-support-release', ext: 'aar')
+    compile(name: 'animated-drawable-release', ext: 'aar')
+    compile(name: 'animated-gif-release', ext: 'aar')
+    compile(name: 'animated-webp-release', ext: 'aar')
+    compile(name: 'drawee-release', ext: 'aar')
+    compile(name: 'drawee-span-release', ext: 'aar')
+    compile(name: 'drawee-volley-release', ext: 'aar')
+    compile(name: 'fbcore-release', ext: 'aar')
+    compile(name: 'fresco-release', ext: 'aar')
+    compile(name: 'imagepipeline-base-release', ext: 'aar')
+    compile(name: 'imagepipeline-okhttp3-release', ext: 'aar')
+    compile(name: 'imagepipeline-release', ext: 'aar')
+    compile(name: 'imagepipeline-volley-release', ext: 'aar')
+    compile(name: 'webpsupport-release', ext: 'aar')
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.parse.bolts:bolts-tasks:1.4.0'
+    compile 'com.parse.bolts:bolts-applinks:1.4.0'
+    compile 'com.android.support:support-v4:25.+'
+    compile 'com.android.support:appcompat-v7:25.+'
+    compile project(':BrothersSDK')
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    compile project(':RefleshLibrary')
+    compile 'com.android.support:recyclerview-v7:25.+'
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.zpsd.vr"
+        minSdkVersion 16
+        targetSdkVersion 25
+    }
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+//只要添加下面这一句就可以了
+        disable 'MissingTranslation'
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'   // aar目录
+        }
+    }
+}

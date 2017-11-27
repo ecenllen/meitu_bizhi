@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hlxwdsj.bj.vz"
+    android:versionCode="1999"
+    android:versionName="2.0.0.0">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25"
+        tools:overrideLibrary="be.ppareit.swiftp,com.melot.meshow" />
+    <!-- 壁纸权限 -->
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+    <!-- 百度 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 以下为可选权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <!-- 百度结束 -->
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.duoduoapp.meitu.MobileGuardAppliation"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme,android:name,android:label">
+        <!-- 广点通开始 -->
+        <service
+            android:name="com.qq.e.comm.DownloadService"
+            android:exported="false" />
+        <activity
+            android:name="com.qq.e.ads.ADActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <!-- 广点通结束 -->
+
+
+        <activity
+            android:name="com.duoduoapp.meitu.WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.duoduoapp.meitu.AppReceiver">
+            <intent-filter>
+                <!-- 一个新应用包已经安装在设备上，数据包括包名（监听所在的app，新安装时，不能接收到这个广播） -->
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <!-- 一个新版本的应用安装到设备，替换之前已经存在的版本  替换时会先收到卸载的再收到替换的， 替换自身也能收到-->
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <!-- 一个已存在的应用程序包已经从设备上移除，包括包名（卸载监听所在的app，则无法接收到） -->
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5a0a1b818f4a9d738300062d"></meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="baidu" />
+
+        <activity
+            android:name="com.duoduoapp.meitu.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators"></activity>
+        <activity
+            android:name="com.duoduoapp.meitu.ui.UISearch"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.duoduoapp.meitu.ui.UIShowClick"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.duoduoapp.meitu.TVAboutActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.duoduoapp.meitu.ManagerActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.duoduoapp.meitu.TVTuijianActivity"
+            android:screenOrientation="portrait"></activity>  <activity
+            android:name="com.duoduoapp.meitu.yshow.KKTuiJianActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.duoduoapp.meitu.ui.GZHAddActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledBlueIndicators"></activity>
+        <activity
+            android:name="com.duoduoapp.meitu.ui.CpuWebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledBlueIndicators"></activity>
+        <activity android:name="com.duoduoapp.meitu.permission.PermissionActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.zpsd.vr.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path"/>
+        </provider>
+    </application>
+
+</manifest>

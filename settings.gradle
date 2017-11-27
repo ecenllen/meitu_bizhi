@@ -1,0 +1,5 @@
+include ':MeiTu_all_baidu', ':RefleshLibrary'
+include ':BrothersSDK'
+include ':sliding_menu_library'
+include ':PhotoViewLib'
+include ':imageloaderlibrary'

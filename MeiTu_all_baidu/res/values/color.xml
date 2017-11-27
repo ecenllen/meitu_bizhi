@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="heise">#000000</color>
+    <color name="title_bg">#2b2937</color>
+    <color name="title_bg2">#00000000</color>
+    <color name="title_click_bg">#394264</color>
+    <color name="title_click_bg2">#ff394264</color>
+    <color name="baise">#ffffff</color>
+    <color name="dark">#22000000</color>
+    <color name="pop_click_bg">#546F8A</color>
+    <color name="touming">@android:color/transparent</color>
+    <color name="textColorPrimary">#ffffffff</color>
+    <color name="textColorPrimaryDark">#ff000000</color>
+    <color name="btn_press_color">#1EA19F</color>
+    <color name="btn_normal_color">#21B3B1</color>
+    <color name="meinv_bg">#24282d</color>
+    <color name="show_content_bg">#EBF1F6</color>
+    <color name="show_content_text">#546F8A</color>
+    <color name="show_content_text_liang">#13BCE4</color>
+    <color name="bantouming">#a0000000</color>
+    <color name="bantouming1">#a0808080</color>
+    <color name="green_yellow">#ADFF2F</color>
+    <color name="black30">#30000000</color>
+    <color name="progress_bg">#EDEEF4</color>
+    <color name="progress_pause_bg">#C5C9D3</color>
+    <color name="progress_resume_bg">#57ABF5</color>
+    <color name="progress_text_color">#737986</color>
+
+    <color name="huise_56">#565656</color>
+    <color name="huise_fc">#fcfcfc</color>
+    <color name="chengse">#f95800</color>
+    <color name="huise_3c">#3c3c3c</color>
+    <color name="huise_c8">#c8c8c8</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+</resources>
